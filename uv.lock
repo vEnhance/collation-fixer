@@ -1,0 +1,115 @@
+version = 1
+revision = 3
+requires-python = ">=3.8, <4"
+
+[[package]]
+name = ""
+version = "0.0.1"
+source = { virtual = "." }
+dependencies = [
+    { name = "colorama" },
+    { name = "mysqlclient" },
+    { name = "privex-helpers" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "colorama" },
+    { name = "mysqlclient", specifier = ">=1.3.14" },
+    { name = "privex-helpers" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata.requires-dev]
+dev = []
+
+[[package]]
+name = "async-property"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/94/00/ade26bd5fdb637e2e83b537113a5b03d5288da673384ff415b629be9e0d6/async_property-0.2.1.tar.gz", hash = "sha256:53826fd45a67d7d6cca3d7abbc0e8ba951f7c7618c830021fbd3675979b0b67d", size = 15096, upload-time = "2019-04-14T03:34:23.796Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/6b/40354fada6f6ed9a38a16220c89ccdd43d96a9565db68467ca27ec059bbf/async_property-0.2.1-py2.py3-none-any.whl", hash = "sha256:f1f105009a6216ed9a13031aa13632754ed8a5c2e329fb8f9f2082d83529eacd", size = 9437, upload-time = "2019-04-14T03:34:22.623Z" },
+]
+
+[[package]]
+name = "colorama"
+version = "0.4.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/75/f2a4c0c94c85e2693c229142eb448840fba0f9230111faa889d1f541d12d/colorama-0.4.3.tar.gz", hash = "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1", size = 27328, upload-time = "2019-12-06T20:46:32.948Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c9/dc/45cdef1b4d119eb96316b3117e6d5708a08029992b2fee2c143c7a0a5cc5/colorama-0.4.3-py2.py3-none-any.whl", hash = "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff", size = 15931, upload-time = "2019-12-06T20:46:31.424Z" },
+]
+
+[[package]]
+name = "mysqlclient"
+version = "2.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/e1/e5f2b231c05dc51d9d87fa5066f90d1405345c54b14b0b11a1c859020f21/mysqlclient-2.0.1.tar.gz", hash = "sha256:fb2f75aea14722390d2d8ddf384ad99da708c707a96656210a7be8af20a2c5e5", size = 87807, upload-time = "2020-07-03T03:55:23.695Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b2/72/e205fcf877dd0ec05d71b975def8ecef3ae4bb7fee14434615140ebdc168/mysqlclient-2.0.1-cp38-cp38-win_amd64.whl", hash = "sha256:a6b5648f648b16335e3b1aaec93dc3fcc81a9a661180e306936437cc522c810b", size = 269021, upload-time = "2020-07-03T03:55:22.37Z" },
+]
+
+[[package]]
+name = "privex-helpers"
+version = "2.18.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "async-property" },
+    { name = "privex-loghelper" },
+    { name = "python-dateutil" },
+    { name = "sniffio" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1b/bd/a2358a4912e3d83d58fe7430ad2abe9bb3231ad994c9e3e1b5e4eb64a2f7/privex_helpers-2.18.0.tar.gz", hash = "sha256:3e3c568fff2f8b08d0b0ed4bae19647bdd9ab3fa418449fe70a123238b92d5c1", size = 157845, upload-time = "2020-07-20T05:57:10.369Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/02/c758113e8d160dcc111177e024017d79b90a23fe9d7cad6bdad22fb6e04e/privex_helpers-2.18.0-py3-none-any.whl", hash = "sha256:f8056297f84712545ea0d282d02e1f013336a22eacb816529fbd6f1012d03285", size = 167809, upload-time = "2020-07-20T05:57:08.595Z" },
+]
+
+[[package]]
+name = "privex-loghelper"
+version = "1.0.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/82/0a/01acffad0d39165b54e48fdb37ae24187862cac7a357d0e695743c02bbe6/privex_loghelper-1.0.6.tar.gz", hash = "sha256:f783fb848e281d639f75ae240d0cf048f0ae2c860157e3dad2833b2392230f47", size = 10004, upload-time = "2019-09-24T05:42:30.209Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/00/01/858f4368893195c16ce70a1945245dce03783ff238b2a77970dff2826f12/privex_loghelper-1.0.6-py3-none-any.whl", hash = "sha256:db9c63fa630746263d35fd10e086ea2230d87628ee802b1856a94dd525fd2a24", size = 11745, upload-time = "2019-09-24T05:42:28.261Z" },
+]
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/be/ed/5bbc91f03fa4c839c4c7360375da77f9659af5f7086b7a7bdda65771c8e0/python-dateutil-2.8.1.tar.gz", hash = "sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c", size = 331745, upload-time = "2019-11-03T05:42:03.923Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a", size = 227183, upload-time = "2019-11-03T05:42:01.643Z" },
+]
+
+[[package]]
+name = "python-dotenv"
+version = "0.14.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/33/3d/a0c00002bae69321f5b87ea7ed123ddf1933e09d3ff658d277889698ee59/python-dotenv-0.14.0.tar.gz", hash = "sha256:8c10c99a1b25d9a68058a1ad6f90381a62ba68230ca93966882a4dbc3bc9c33d", size = 29029, upload-time = "2020-07-03T14:34:05.642Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f2/16/28d434b28c5be29a6af8fd0e3a2bda3bd30500ef0cd17bc79f7a6793a8d4/python_dotenv-0.14.0-py2.py3-none-any.whl", hash = "sha256:c10863aee750ad720f4f43436565e4c1698798d763b63234fb5021b6c616e423", size = 17837, upload-time = "2020-07-03T14:34:04.436Z" },
+]
+
+[[package]]
+name = "six"
+version = "1.15.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/34/415834bfdafca3c5f451532e8a8d9ba89a21c9743a0c59fbd0205c7f9426/six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259", size = 33917, upload-time = "2020-05-21T15:25:55.142Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced", size = 10963, upload-time = "2020-05-21T15:25:54.177Z" },
+]
+
+[[package]]
+name = "sniffio"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ad/e5/63342a59850c6d285af0df92c86a778e1753235d6d392b9ae184217af852/sniffio-1.1.0.tar.gz", hash = "sha256:8e3810100f69fe0edd463d02ad407112542a11ffdc29f67db2bf3771afb87a21", size = 15285, upload-time = "2019-04-20T04:05:54.621Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b3/82/4bd4b7d9c0d1dc0fbfbc2a1e00138e7f3ab85bc239358fe9b78aa2ab586d/sniffio-1.1.0-py3-none-any.whl", hash = "sha256:20ed6d5b46f8ae136d00b9dcb807615d83ed82ceea6b2058cecb696765246da5", size = 4534, upload-time = "2019-04-20T04:05:53.207Z" },
+]
